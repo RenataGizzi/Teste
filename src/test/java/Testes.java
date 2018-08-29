@@ -39,14 +39,14 @@ public class Testes {
     @Test
         public void TesteMaior () {
             double vet [] = {1,2,3,4,5,6};
-            MaioreMenor maior = new MaioreMenor ();
+            Media maior = new Media ();
             double res = maior.verificarMaior(vet);
             assertEquals(6, res, 0.01);
     }
     @Test
         public void TesteMenor () {
             double vet [] = {1,2,3,4,5,6};
-            MaioreMenor menor = new MaioreMenor ();
+            Media menor = new Media ();
             double res = menor.verificarMenor(vet);
             assertEquals(1, res, 0.01);
     }
