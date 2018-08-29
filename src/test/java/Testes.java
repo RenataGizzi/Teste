@@ -75,6 +75,6 @@ public class Testes {
         double vet[] = {1, 2, 3, 4, 5};
         DesvioPadrao desvio = new DesvioPadrao();
         double res = desvio.calcularDesvioPadrao(vet);
-        assertEquals(1.414214, res, 0.01);
+        assertEquals(1.58114, res, 0.01);
     }
 }
