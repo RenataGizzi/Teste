@@ -43,5 +43,12 @@ public class Testes {
             double res = maior.verificarMaior(vet);
             assertEquals(6, res, 0.01);
     }
+    @Test
+        public void TesteMenor () {
+            double vet [] = {1,2,3,4,5,6};
+            MaioreMenor menor = new MaioreMenor ();
+            double res = menor.verificarMenor(vet);
+            assertEquals(1, res, 0.01);
+    }
     
 }

@@ -15,7 +15,7 @@ public class MaioreMenor {
     }
     
     public double verificarMenor(double vet[]) {
-        double menor = 0;   
+        double menor = Double.MAX_VALUE;;   
         Arrays.sort(vet); 
         for (int i = 0; i < vet.length; i++) {
             if ( vet[i] < menor ) {
