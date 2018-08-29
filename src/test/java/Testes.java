@@ -12,7 +12,7 @@ public class Testes {
     }
     
     @Test
-    public void testevetorordenadoimpar() {
+    public void TesteMedianaVetorImpar() {
         double vet [] = {1,2,3,4,5};
         Mediana mediana= new Mediana ();
         double res = mediana.calcularMediana(vet);
@@ -20,10 +20,18 @@ public class Testes {
     }
     
     @Test
-    public void testevetorordenadopar () {
+    public void TesteMedianaVetorPar () {
         double vet [] = {1,2,3,4,5,6};
         Mediana mediana= new Mediana ();
         double res = mediana.calcularMediana(vet);
+        assertEquals(3.5, res, 0.01);
+    }
+    
+    @Test
+        public void TesteMedia () {
+        double vet [] = {1,2,3,4,5,6};
+        Media media = new Media ();
+        double res = media.calcularMedia(vet);
         assertEquals(3.5, res, 0.01);
     }
 }
