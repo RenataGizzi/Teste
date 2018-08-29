@@ -13,7 +13,7 @@ public class MedianaTest {
     
     @Test
     public void testevetorordenadoimpar() {
-        double vet [] = {1,2,3,4,5};
+        double vet [] = {-1,-2,-3,4,5};
         Mediana mediana= new Mediana ();
         double res = mediana.calcularMediana(vet);
         assertEquals(3, res, 0.01);
