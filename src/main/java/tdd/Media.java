@@ -21,7 +21,10 @@ public class Media {
 
     public double verificarMaior(double vet[]) {
         double maior = 0;
-        Arrays.sort(vet);
+
+        if (vet.length <= 0) {
+            return 0;
+        }
         for (int i = 0; i < vet.length; i++) {
             if (vet[i] > maior) {
                 maior = vet[i];
@@ -32,12 +35,45 @@ public class Media {
 
     public double verificarMenor(double vet[]) {
         double menor = Double.MAX_VALUE;;
-        Arrays.sort(vet);
+
+        if (vet.length <= 0) {
+            return 0;
+        }
         for (int i = 0; i < vet.length; i++) {
             if (vet[i] < menor) {
                 menor = vet[i];
             }
         }
         return menor;
+    }
+
+    public double verificarAcimaMedia(double vet[]) {
+        double maior = calcularMedia(vet);
+        double total = 0;
+
+        if (vet.length <= 0) {
+            return 0;
+        }
+        for (int i = 0; i < vet.length; i++) {
+            if (maior < vet[i]) {
+                total = total + 1;
+            }
+        }
+        return total;
+    }
+
+    public double verificarAbaixoMedia(double vet[]) {
+        double menor = calcularMedia(vet);
+        double total = 0;
+
+        if (vet.length <= 0) {
+            return 0;
+        }
+        for (int i = 0; i < vet.length; i++) {
+            if (menor > vet[i]) {
+                total = total + 1;
+            }
+        }
+        return total;
     }
 }
