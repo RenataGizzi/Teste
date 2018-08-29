@@ -30,9 +30,17 @@ public class Testes {
     
     @Test
         public void TesteMedia () {
-        double vet [] = {1,2,3,4,5,6};
-        Media media = new Media ();
-        double res = media.calcularMedia(vet);
-        assertEquals(3.5, res, 0.01);
+            double vet [] = {1,2,3,4,5,6};
+            Media media = new Media ();
+            double res = media.calcularMedia(vet);
+            assertEquals(3.5, res, 0.01);
     }
+    @Test
+        public void TesteMaior () {
+            double vet [] = {1,2,3,4,5,6};
+            MaioreMenor maior = new MaioreMenor ();
+            double res = maior.VerificarMaior(vet);
+            assertEquals(3.5, res, 0.01);
+    }
+    
 }
