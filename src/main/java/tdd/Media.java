@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Media {
     int i;
-    double res = 0;
     
     public double calcularMedia(double vet[]) {
         double soma=0;

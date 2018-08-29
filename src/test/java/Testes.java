@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import tdd.MaioreMenor;
 
 public class Testes {
     
@@ -39,8 +40,8 @@ public class Testes {
         public void TesteMaior () {
             double vet [] = {1,2,3,4,5,6};
             MaioreMenor maior = new MaioreMenor ();
-            double res = maior.VerificarMaior(vet);
-            assertEquals(3.5, res, 0.01);
+            double res = maior.verificarMaior(vet);
+            assertEquals(6, res, 0.01);
     }
     
 }
