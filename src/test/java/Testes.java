@@ -8,7 +8,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import tdd.MaioreMenor;
-
+import tdd.DesvioPadrao;
 public class Testes {
 
     public Testes() {
@@ -68,5 +68,13 @@ public class Testes {
         Media abaixo = new Media();
         double res = abaixo.verificarAbaixoMedia(vet);
         assertEquals(3, res, 0.01);
+    }
+
+    @Test
+    public void TesteDesvioPadrao() {
+        double vet[] = {1, 2, 3, 4, 5};
+        DesvioPadrao desvio = new DesvioPadrao();
+        double res = desvio.calcularDesvioPadrao(vet);
+        assertEquals(1.414214, res, 0.01);
     }
 }
