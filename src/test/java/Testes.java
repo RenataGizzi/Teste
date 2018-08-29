@@ -7,8 +7,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import tdd.MaioreMenor;
+import tdd.MaioreseMenores;
 import tdd.DesvioPadrao;
+
 public class Testes {
 
     public Testes() {
@@ -76,5 +77,28 @@ public class Testes {
         DesvioPadrao desvio = new DesvioPadrao();
         double res = desvio.calcularDesvioPadrao(vet);
         assertEquals(1.58114, res, 0.01);
+    }
+ @Test
+    public void TestNMaiores() {
+        double vet[] = {1, 2, 3, 4, 5};
+        MaioreseMenores mem = new MaioreseMenores();
+        double[] maiores = new double[3];
+        maiores = mem.verificarNMaiores(vet, 3);
+
+        assertEquals(5, maiores[0], 0.001);
+        assertEquals(4, maiores[1], 0.001);
+        assertEquals(3, maiores[2], 0.001);
+    }
+    
+    @Test
+    public void TestNMenores() {
+        double vet[] = {1, 2, 3, 4, 5};
+        MaioreseMenores mem = new MaioreseMenores();
+        double[] menores = new double[3];
+        menores = mem.verificarNMenores(vet, 3);
+
+        assertEquals(1, menores[0], 0.001);
+        assertEquals(2, menores[1], 0.001);
+        assertEquals(3, menores[2], 0.001);
     }
 }
