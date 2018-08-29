@@ -6,9 +6,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class MedianaTest {
+public class Testes {
     
-    public MedianaTest() {
+    public Testes() {
     }
     
     @Test
@@ -17,5 +17,13 @@ public class MedianaTest {
         Mediana mediana= new Mediana ();
         double res = mediana.calcularMediana(vet);
         assertEquals(3, res, 0.01);
+    }
+    
+    @Test
+    public void testevetorordenadopar () {
+        double vet [] = {1,2,3,4,5,6};
+        Mediana mediana= new Mediana ();
+        double res = mediana.calcularMediana(vet);
+        assertEquals(3.5, res, 0.01);
     }
 }
