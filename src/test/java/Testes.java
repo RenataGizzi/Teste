@@ -1,4 +1,5 @@
 import tdd.Mediana;
+import tdd.Media;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
